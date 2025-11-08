@@ -14,13 +14,13 @@ Para esse projeto, além de mudarmos o JSON para o JSON Server, vamos permitir o
 
 **Print dos testes da API com Postman ou similar**
 
-<< COLOQUE A IMAGEM GET AQUI >>
+![Print teste requisição GET](testeGET.png)
 
-<< COLOQUE A IMAGEM POST AQUI >>
+![Print teste requisição POST](testePOST.png)
 
-<< COLOQUE A IMAGEM PUT AQUI >>
+![Print teste requisição PUT](testePUT.png)
 
-<< COLOQUE A IMAGEM DELETE AQUI >>
+![Print teste requisição DELETE](testeDELETE.png)
 
 **Print da aba NETWORK com requisições Fetch/XHR POST e GET**
 
