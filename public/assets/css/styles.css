@@ -1,0 +1,441 @@
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #F7F3EF;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* Header */
+
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-bottom: 8px solid #FFD166;
+        max-width: 100vw;
+        box-sizing: border-box;
+    }
+
+    header .logo {
+        grid-column: 1 / 2;
+    }
+
+    header .titulo {
+        grid-column: 2 / 3;
+    }
+
+    header .menu-navegacao {
+        grid-column: 1 / 3;
+    }
+
+    header .menu-navegacao ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    .logo img {
+        max-width: 150px;
+        height: auto;
+    }
+
+    .titulo {
+        color: #1B3A57;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        margin: 1%;
+        letter-spacing: 1px;
+        font-weight: bolder;
+    }
+
+    .titulo h1 {
+        margin: 0;
+        font-size: 5vw;
+    }   
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav a {
+        color: #1B3A57;
+        background: rgba(32, 51, 88, 0.219);
+        text-decoration: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 25px;
+        font-weight: 500;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        background: #FFD166;
+        color: #1B3A57;
+        transform: translateY(-2px);
+        border-color: #5A6370;
+    }
+
+
+    /* Responsividade: Header e Navegação */
+
+    /* Telas muito pequenas: até 480px */
+    @media (max-width: 480px) {
+        
+        header {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            padding: 15px 10px;
+        }
+
+        header .logo {
+            grid-column: 1;
+            justify-self: center;
+        }
+
+        header .titulo {
+            grid-column: 1;
+            text-align: center;
+            font-size: 80%;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5%;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            width: 44%;
+            list-style: none;
+        }
+
+        nav a {
+            display: block;
+            text-align: center;
+            padding: 0.4rem 0.6rem;
+            font-size: 90%;
+        }
+    }
+
+    /* Pequeno a médio: 481px até 900px */
+    @media (min-width: 481px) and (max-width: 900px) {
+
+        header {
+            grid-template-columns: auto 1fr;
+            padding: 20px 10px;
+        }
+
+        header .titulo {
+            text-align: center;
+            font-size: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        nav li {
+            width: 38%;
+            list-style: none;
+        }
+
+        nav a {
+            display: block;
+            text-align: center;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+        }
+    }
+
+    /* Desktop: acima de 900px */
+    @media (min-width: 901px) {
+        header {
+            grid-template-columns: auto 1fr;
+        }
+
+        header .titulo {
+            font-size: 1.8vw;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            padding: 10px 10px; 
+            gap: 1rem;
+        }
+
+        nav li {
+            width: auto;
+            list-style: none;
+        }
+
+        nav a {
+            display: block;
+            text-align: center;
+            padding: 0.8rem 1.5rem;
+            font-size: 0.9rem;
+        }
+    }
+
+
+
+    /* Main */
+
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 1rem;
+        margin-top: 20px;
+    }
+
+    /* Banner */
+    .banner {
+        text-align: center;
+        padding: 2rem 2rem;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: bold;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+        border-left: solid 4px #FF951E;
+        border-right: solid 4px #FF951E;
+    }
+
+    .banner img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    /* Responsividade: Banner */
+
+    @media (max-width: 600px) {
+
+        .banner {
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+
+
+
+    /* Seções do main abaixo do banner */
+
+    .container-feed-agenda {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Responsividade: Feed e Agenda */
+
+    @media (max-width: 900px) {
+        .container-feed-agenda {
+            flex-direction: column;
+        }
+    }
+
+    /* Feed Notícias */
+    .feed-noticias {
+        flex: 0 0 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .noticia {
+        background: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        border-left: 4px solid #FF951E;
+    }
+
+    .noticia h2 {
+        color: #1B3A57;
+        margin-bottom: 1rem;
+    }
+
+    /* Agenda */
+    .agenda {
+        Color: #1B3A57;
+        background: white;
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        color: #1B3A57;
+        border-top: 4px solid #FF951E;
+    }
+
+    /* Footer */
+    footer {
+        background: #5A6370;
+        color: white;
+        padding: 1rem 1rem 1rem;
+        border-top: 8px solid #FFD166;
+    }
+
+    .container-principal-footer {
+        margin: 0 auto;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .contato {
+        grid-row: 1 / 3;
+    }
+
+    .container-lado-direito {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    footer section {
+        padding: 1rem 0;
+    }
+
+    /* Seção contato */
+
+    .contato form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contato fieldset {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 10px;
+    }
+
+    .contato legend {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        padding: 0 0.5rem;
+    }
+
+    .linha-form {
+        margin-top: 0.5rem;
+    }
+
+    .contato label {
+        color: #bdc3c7;
+    }
+
+    .contato input[type="text"],
+    .contato input[type="email"],
+    .contato textarea {
+        width: 95%;
+        padding: 0.8rem;
+        border-radius: 5px;
+        border: none;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        border: 1px solid wheat;
+    }
+
+    .contato textarea {
+        min-height: 100px;
+        resize: vertical;
+    }
+
+    .contato button {
+        background: #FF951E;
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .contato button:hover {
+        background: #FFD166;
+        color: #1B3A57;
+    }
+
+    /* Seções Redes Sociais e Parceiros */
+
+    .redes-sociais a,
+    .parceiros a {
+        text-decoration: none;
+        color: lightgrey;
+        font-weight: bold;
+    }
+
+    .redes-sociais ul,
+    .parceiros ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .redes-sociais a {
+        color: lightgrey;
+        font-weight: bold;
+    }
+
+    .redes-sociais li,
+    .parceiros li {
+        color: #1B3A57;
+        background: rgba(255, 149, 30, 0.15);
+        padding: 0.8rem 1.5rem;
+        border-radius: 20px;
+    }
+
+    .redes-sociais li:hover,
+    .parceiros li:hover {
+        background: rgba(255, 149, 30, 0.35);
+        color: #1B3A57;
+    }
+
+    /* Seção Direitos */
+    .Direitos p {
+        text-align: center;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        color: rgba(245, 245, 245, 0.738);
+    }
+
+    /* Responsividade: Footer */
+
+    @media (max-width: 600px) {
+        .container-principal-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
