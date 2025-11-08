@@ -68,28 +68,28 @@
         <h2 class="mb-4">Formulário de Inscrição</h2>
         <form id="formInscricao">
             <div class="mb-3">
-                <label for="nome" class="form-label">Nome Completo:</label>
-                <input type="text" class="form-control" id="nome" name="nome" required>
+                <label for="nomeInscricao" class="form-label">Nome Completo:</label>
+                <input type="text" class="form-control" id="nomeInscricao" name="nomeInscricao" required>
             </div>
 
             <div class="mb-3">
-                <label for="cpf" class="form-label">CPF:</label>
-                <input type="text" class="form-control" id="cpf" name="cpf" maxlength="14" placeholder="000.000.000-00" required>
+                <label for="cpfInscricao" class="form-label">CPF:</label>
+                <input type="text" class="form-control" id="cpfInscricao" name="cpfInscricao" maxlength="14" placeholder="000.000.000-00" required>
             </div>
 
             <div class="mb-3">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <label for="emailInscricao" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="emailInscricao" name="emailInscricao" required>
             </div>
 
             <div class="mb-3">
-                <label for="telefone" class="form-label">Telefone:</label>
-                <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                <label for="telefoneInscricao" class="form-label">Telefone:</label>
+                <input type="tel" class="form-control" id="telefoneInscricao" name="telefoneInscricao" placeholder="(00) 00000-0000" required>
             </div>
 
             <div class="mb-3">
-                <label for="curso" class="form-label">Curso de Interesse:</label>
-                <select class="form-select" id="curso" name="curso" required>
+                <label for="cursoInscricao" class="form-label">Curso de Interesse:</label>
+                <select class="form-select" id="cursoInscricao" name="cursoInscricao" required>
                 <option value="" disabled selected>Selecione um curso</option>
                 <option value="artes-visuais">Oficina de Artes Visuais</option>
                 <option value="artes-visuais">Oficina de Design Popular</option>
@@ -102,10 +102,10 @@
             </div>
 
             <div class="d-flex flex-wrap gap-2">
-                <button type="submit" class="btn btn-primary" id="btnEnviar">Enviar Inscrição</button>
-                <button type="button" class="btn btn-secondary" id="btnLocalizar">Localizar Inscrição</button>
-                <button type="button" class="btn btn-warning" id="btnAlterar">Alterar Inscrição</button>
-                <button type="button" class="btn btn-danger" id="btnCancelar">Cancelar Inscrição</button>
+                <button type="submit" class="btn btn-primary" id="btnEnviarInscricao">Enviar Inscrição</button>
+                <button type="button" class="btn btn-secondary" id="btnLocalizarInscricao">Localizar Inscrição</button>
+                <button type="button" class="btn btn-warning" id="btnAlterarInscricao">Alterar Inscrição</button>
+                <button type="button" class="btn btn-danger" id="btnCancelarInscricao">Cancelar Inscrição</button>
             </div>
         </form>
 
@@ -127,26 +127,26 @@
 
                     <form id="formContato">
                         <div class="mb-2">
-                            <label for="nome" class="form-label">Nome:</label>
-                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome completo" required>
+                            <label for="nomeContato" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" id="nomeContato" name="nomeContato" placeholder="Seu nome completo" required>
                         </div>
 
                         <div class="mb-2">
-                            <label for="telefone" class="form-label">Telefone:</label>
-                            <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                            <label for="telefoneContato" class="form-label">Telefone:</label>
+                            <input type="tel" class="form-control" id="telefoneContato" name="telefoneContato" placeholder="(00) 00000-0000" required>
                         </div>
 
                         <div class="mb-2">
-                            <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                            <label for="emailContato" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="emailContato" name="emailContato" placeholder="seuemail@exemplo.com" required>
                         </div>
 
                         <div class="mb-3">
-                            <label for="mensagem" class="form-label">Mensagem:</label>
-                            <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem aqui..." required></textarea>
+                            <label for="mensagemContato" class="form-label">Mensagem:</label>
+                            <textarea class="form-control" id="mensagemContato" name="mensagemContato" rows="4" placeholder="Digite sua mensagem aqui..." required></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-warning text-dark fw-semibold">Enviar</button>
+                        <button id="btnEnviarContato" type="submit" class="btn btn-warning text-dark fw-semibold">Enviar</button>
                     </form>
                 </div>
 
@@ -204,7 +204,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/public/assets/scripts/app.js"></script>
+    <script src="/assets/scripts/app.js"></script>
 </body>
 
 </html>
