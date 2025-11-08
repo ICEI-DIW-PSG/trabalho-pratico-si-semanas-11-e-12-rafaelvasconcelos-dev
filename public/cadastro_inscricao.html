@@ -66,34 +66,49 @@
     <!-- Main -->
     <main class="container my-5">
         <h2 class="mb-4">Formulário de Inscrição</h2>
-        <form>
+        <form id="formInscricao">
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome Completo:</label>
-                <input type="text" class="form-control" id="nome" required>
+                <input type="text" class="form-control" id="nome" name="nome" required>
             </div>
+
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF:</label>
+                <input type="text" class="form-control" id="cpf" name="cpf" maxlength="14" placeholder="000.000.000-00" required>
+            </div>
+
             <div class="mb-3">
                 <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" required>
+                <input type="email" class="form-control" id="email" name="email" required>
             </div>
+
             <div class="mb-3">
                 <label for="telefone" class="form-label">Telefone:</label>
-                <input type="tel" class="form-control" id="telefone" required>
+                <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
             </div>
+
             <div class="mb-3">
                 <label for="curso" class="form-label">Curso de Interesse:</label>
-                <select class="form-select" id="curso" required>
-                    <option value="" disabled selected>Selecione um curso</option>
-                    <option value="artes-visuais">Oficina de Artes Visuais</option>
-                    <option value="musica">Oficina de Dança Contemporânea</option>
-                    <option value="artes-visuais">Oficina de Design Popular</option>
-                    <option value="artes-visuais">Oficina de Iniciação ao Circo</option>
-                    <option value="musica">Oficina de Iniciação Musical</option>
-                    <option value="artes-visuais">Oficina de Patrimônio Cultural</option>
-                    <option value="teatro">Oficina de Teatro</option>
+                <select class="form-select" id="curso" name="curso" required>
+                <option value="" disabled selected>Selecione um curso</option>
+                <option value="artes-visuais">Oficina de Artes Visuais</option>
+                <option value="artes-visuais">Oficina de Design Popular</option>
+                <option value="artes-visuais">Oficina de Iniciação ao Circo</option>
+                <option value="artes-visuais">Oficina de Patrimônio Cultural</option>
+                <option value="musica">Oficina de Dança Contemporânea</option>
+                <option value="musica">Oficina de Iniciação Musical</option>
+                <option value="teatro">Oficina de Teatro</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar Inscrição</button>
+
+            <div class="d-flex flex-wrap gap-2">
+                <button type="submit" class="btn btn-primary" id="btnEnviar">Enviar Inscrição</button>
+                <button type="button" class="btn btn-secondary" id="btnLocalizar">Localizar Inscrição</button>
+                <button type="button" class="btn btn-warning" id="btnAlterar">Alterar Inscrição</button>
+                <button type="button" class="btn btn-danger" id="btnCancelar">Cancelar Inscrição</button>
+            </div>
         </form>
+
     </main>
 
     <!-- Footer -->
@@ -110,24 +125,28 @@
                         <h5 class="text-primary mt-4">Tire Suas Dúvidas</h5>
                     </div>
 
-                    <form>
+                    <form id="formContato">
                         <div class="mb-2">
                             <label for="nome" class="form-label">Nome:</label>
-                            <input type="text" class="form-control" id="nome">
+                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome completo" required>
                         </div>
+
                         <div class="mb-2">
                             <label for="telefone" class="form-label">Telefone:</label>
-                            <input type="text" class="form-control" id="telefone">
+                            <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
                         </div>
+
                         <div class="mb-2">
                             <label for="email" class="form-label">Email:</label>
-                            <input type="email" class="form-control" id="email">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@exemplo.com" required>
                         </div>
+
                         <div class="mb-3">
                             <label for="mensagem" class="form-label">Mensagem:</label>
-                            <textarea class="form-control" id="mensagem" rows="4"></textarea>
+                            <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem aqui..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-warning text-dark">Enviar</button>
+
+                        <button type="submit" class="btn btn-warning text-dark fw-semibold">Enviar</button>
                     </form>
                 </div>
 
