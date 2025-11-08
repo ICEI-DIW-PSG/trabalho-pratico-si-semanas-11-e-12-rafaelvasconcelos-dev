@@ -45,7 +45,7 @@ const dados = {
         {
             "id": 6,
             "slide": 1,
-            "nome": "Oficina de Teatro",
+            "nome": "Teatro",
             "descricao": "Aulas de teatro para iniciantes - Inscreva-se já!",
             "imagem": "/public/images/banner1.jpg"
         },
