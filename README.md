@@ -14,9 +14,9 @@ Para esse projeto, além de mudarmos o JSON para o JSON Server, vamos permitir o
 
 **Print dos testes da API com Postman ou similar**
 
-![Print teste requisição GET](testeGET.png)
-
 ![Print teste requisição POST](testePOST.png)
+
+![Print teste requisição GET](testeGET.png)
 
 ![Print teste requisição PUT](testePUT.png)
 
