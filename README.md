@@ -24,7 +24,15 @@ Para esse projeto, além de mudarmos o JSON para o JSON Server, vamos permitir o
 
 **Print da aba NETWORK com requisições Fetch/XHR POST e GET**
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Print teste no Navegador aba NetWork - Requesição POST](testeDevToolsPOST.png)
+
+![Print teste no Navegador aba NetWork - Carregamento dinâmico GET](testeDevToolsGET1.png)
+
+![Print teste no Navegador aba NetWork - Requesição GET](testeDevToolsGET2.png)
+
+![Print teste no Navegador aba NetWork - Requesição PUT](testeDevToolsPUT.png)
+
+![Print teste no Navegador aba NetWork - Requesição DELETE](testeDevToolsDELETE.png)
 
 ## **Orientações Gerais**
 

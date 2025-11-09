@@ -1,20 +1,4 @@
 {
-  "usuarios": [
-    {
-      "id": 1,
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@  .com"
-    },
-    {
-      "id": 2,
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
-    }
-  ],
   "noticias": [
     {
       "id": 1,
@@ -96,29 +80,29 @@
   ],
   "inscritos": [
     {
-      "id": 11,
-      "nome": "Rafael Vasconcelos",
-      "CPF": "12345678900",
-      "telefone": "31989107964",
-      "email": "rafael.vasconcelos@sga.pucminas.br",
-      "curso": "Oficina de Teatro"
+      "nome": "Pessoa Teste Um",
+      "CPF": "123.456.789-10",
+      "email": "pessoa.teste@email.com",
+      "telefone": "(31) 99876-5432",
+      "curso": "musica",
+      "id": 1
     },
     {
-      "id": 12,
-      "nome": "Jessica Mendonça",
-      "CPF": "98765432100",
-      "telefone": "31974109965",
-      "email": "jessica.vasconcelos@sga.pucminas.br",
-      "curso": "Design Popular"
-    },
-    {
-      "id": 13,
-      "nome": "Ana Silva",
-      "CPF": "45612378900",
-      "telefone": "31998599856",
-      "email": "ana.silva@sga.pucminas.br",
-      "curso": "Dança Contemporânea"
+      "nome": "Pessoa Teste Dois",
+      "CPF": "789.456.123-01",
+      "email": "pessoa.dois@gmail.com",
+      "telefone": "(31) 97418-5296",
+      "curso": "musica",
+      "id": 2
     }
   ],
-  "mensagens": []
+  "mensagens": [
+    {
+      "nome": "Pessoa Teste Contato",
+      "telefone": "(31) 98520-7413",
+      "email": "pessoateste.contato@email.com",
+      "mensagem": "Teste de envio de mensagem para contato.",
+      "id": 1
+    }
+  ]
 }
